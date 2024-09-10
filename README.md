@@ -4,22 +4,22 @@ public class VerificarSenha {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
-
+String login;
+int senha;
+    
+        System.out.print("Digite o login: ");
+        login = scanner.next();
+        
        
         System.out.print("Digite a senha: ");
-        int senhaInformada = scanner.nextInt();
+         senha = scanner.nextInt();
 
-        
-        scanner.close();
 
-        
-        final int SENHA_VALIDA = 1004;
-
-        
-        if (senhaInformada == SENHA_VALIDA) {
-            System.out.println("Senha correta.");
+        if (login .equals("DVD") && senha == 1004) {
+            
+            System.out.println("CHEGA AI MENO.");
         } else {
-            System.out.println("Senha incorreta.");
+            System.out.println("SAI FORA MENO.");
         }
     }
 }
